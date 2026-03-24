@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "..\Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "..\Service\Service.csproj", "{EFDBC4D4-5487-4766-BC9F-C8EE2CFD800C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Presentation", "..\CompanyEmployees.Presentation\CompanyEmployees.Presentation.csproj", "{54439BA1-1E42-47A8-A07C-ECDD81C0AAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "..\Shared\Shared.csproj", "{E79B058F-6CF0-4A36-9639-275F2D9EBD95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{EFDBC4D4-5487-4766-BC9F-C8EE2CFD800C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFDBC4D4-5487-4766-BC9F-C8EE2CFD800C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFDBC4D4-5487-4766-BC9F-C8EE2CFD800C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54439BA1-1E42-47A8-A07C-ECDD81C0AAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54439BA1-1E42-47A8-A07C-ECDD81C0AAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54439BA1-1E42-47A8-A07C-ECDD81C0AAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54439BA1-1E42-47A8-A07C-ECDD81C0AAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79B058F-6CF0-4A36-9639-275F2D9EBD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79B058F-6CF0-4A36-9639-275F2D9EBD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79B058F-6CF0-4A36-9639-275F2D9EBD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79B058F-6CF0-4A36-9639-275F2D9EBD95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
