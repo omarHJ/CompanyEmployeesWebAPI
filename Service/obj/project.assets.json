@@ -363,8 +363,8 @@
     },
     "Service.Contracts/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary1/Service.Contracts.csproj",
-      "msbuildProject": "../ClassLibrary1/Service.Contracts.csproj"
+      "path": "../Service.Contracts/Service.Contracts.csproj",
+      "msbuildProject": "../Service.Contracts/Service.Contracts.csproj"
     },
     "Shared/1.0.0": {
       "type": "project",
@@ -412,11 +412,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\ClassLibrary1\\Service.Contracts.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\ClassLibrary1\\Service.Contracts.csproj"
-            },
             "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Contracts\\Contracts.csproj": {
               "projectPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Contracts\\Contracts.csproj"
+            },
+            "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Service.Contracts\\Service.Contracts.csproj"
             }
           }
         }

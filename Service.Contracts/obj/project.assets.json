@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\ClassLibrary1\\Service.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Service.Contracts\\Service.Contracts.csproj",
       "projectName": "Service.Contracts",
-      "projectPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\ClassLibrary1\\Service.Contracts.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Service.Contracts\\Service.Contracts.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\ClassLibrary1\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\Omar\\Tuition\\Software Engineer\\New folder\\Service.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

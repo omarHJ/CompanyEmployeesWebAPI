@@ -13,3 +13,4 @@ C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\Contracts\obj\Debu
 C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\Contracts\obj\Debug\net8.0\refint\Contracts.dll
 C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\Contracts\obj\Debug\net8.0\Contracts.pdb
 C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\Contracts\obj\Debug\net8.0\ref\Contracts.dll
+C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json

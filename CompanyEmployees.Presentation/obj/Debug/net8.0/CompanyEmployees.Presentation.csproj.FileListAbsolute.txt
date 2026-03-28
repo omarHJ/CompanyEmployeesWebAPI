@@ -15,3 +15,4 @@ C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\CompanyEmployees.P
 C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\CompanyEmployees.Presentation\obj\Debug\net8.0\refint\CompanyEmployees.Presentation.dll
 C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\CompanyEmployees.Presentation\obj\Debug\net8.0\CompanyEmployees.Presentation.pdb
 C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\CompanyEmployees.Presentation\obj\Debug\net8.0\ref\CompanyEmployees.Presentation.dll
+C:\Users\hp\Desktop\Omar\Tuition\Software Engineer\New folder\CompanyEmployees.Presentation\obj\Debug\net8.0\CompanyEmployees.Presentation.sourcelink.json
