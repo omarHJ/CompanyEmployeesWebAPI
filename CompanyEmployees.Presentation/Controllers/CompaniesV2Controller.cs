@@ -10,7 +10,7 @@ namespace CompanyEmployees.Presentation.Controllers
 {
     // [ApiVersion("2.0", Deprecated = true)]   We will be able to work with that API, but we will be notified that this version is deprecated
     [ApiVersion("2.0")]
-    [Route("api//companies")]
+    [Route("api/companies")]
     [ApiController]
     public class CompaniesV2Controller : ControllerBase
     {
