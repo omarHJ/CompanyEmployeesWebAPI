@@ -11,7 +11,7 @@ namespace CompanyEmployees.Presentation.Controllers
     // [ApiVersion("2.0", Deprecated = true)]   We will be able to work with that API, but we will be notified that this version is deprecated
     [ApiVersion("2.0")]
     [Route("api/companies")]
-    [ApiController]
+    [ApiExplorerSettings(GroupName = "v2")]
     public class CompaniesV2Controller : ControllerBase
     {
         private readonly IServiceManager _service;
