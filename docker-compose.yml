@@ -1,0 +1,25 @@
+services:
+  companyemployees:
+    image: ${DOCKER_REGISTRY-}companyemployees
+    build:
+      context: .
+      dockerfile: CompanyEmployees/Dockerfile
+    environment:
+      - SECRET=YourTopSecretKeyHasGreater256Bytes113211162023!!!!
+      - JwtSettings__validIssuer=CompanyEmployeesAPI
+      - JwtSettings__validAudience=https://localhost:7011
+      - JwtSettings__expires=5
+      - ConnectionStrings__dbConnection=Server=companydb,1433;Database=CompanyEmployeeWebAPI;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False;TrustServerCertificate=True
+    ports:
+      - "8080:8080" # host:container
+    depends_on:
+      - companydb
+
+  companydb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong!Passw0rd
+      - MSSQL_PID=Express

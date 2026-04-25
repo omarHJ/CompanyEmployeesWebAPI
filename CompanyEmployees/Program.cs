@@ -6,9 +6,11 @@ using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using NLog;
+using Repository;
 using Service.DataShaping;
 using Shared.DataTransferObjects;
 
@@ -63,7 +65,11 @@ NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
     .OfType<NewtonsoftJsonPatchInputFormatter>().First();
 
 var app = builder.Build();
-
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<RepositoryContext>();
+    db.Database.Migrate();
+}
 var logger = app.Services.GetRequiredService<ILoggerManager>();
 
 app.ConfigureExceptionHandler(logger);
