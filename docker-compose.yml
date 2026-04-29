@@ -14,6 +14,8 @@ services:
       - "8080:8080" # host:container
     depends_on:
       - companydb
+    volumes:
+      - ./logs:/app/logs
 
   companydb:
     image: mcr.microsoft.com/mssql/server:2022-latest
@@ -23,3 +25,25 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=YourStrong!Passw0rd
       - MSSQL_PID=Express
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+
+  loki:
+    image: grafana/loki:latest
+    command: -config.file=/etc/loki/config.yml
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki-config.yml:/etc/loki/config.yml
+
+  promtail:
+    image: grafana/promtail:latest
+    depends_on:
+      - loki
+    volumes:
+      - ./logs:/logs
+      - ./promtail-config.yml:/etc/promtail/config.yml
+    command: -config.file=/etc/promtail/config.yml

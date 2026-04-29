@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using NLog;
+using NLog.Web;
 using Repository;
 using Service.DataShaping;
 using Shared.DataTransferObjects;
@@ -18,9 +19,8 @@ using Shared.DataTransferObjects;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
-    "/nlog.config"));
-
+LogManager.LoadConfiguration(Path.Combine(AppContext.BaseDirectory, "nlog.config"));
+builder.Host.UseNLog();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();

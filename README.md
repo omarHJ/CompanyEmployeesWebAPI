@@ -1,5 +1,5 @@
 <h1 style="display: flex; justify-content: space-between; align-items: center;">
-  🚀 Company Employees Web API
+   Company Employees Web API
   <img src="https://img.shields.io/badge/docker-ready-blue" />
 </h1>
 A production-ready ASP.NET Core Web API built using Clean Architecture principles, implementing advanced REST features such as HATEOAS, JWT authentication, caching, and rate limiting.
@@ -206,6 +206,7 @@ You can test the API using:
 - Rate Limiting & Throttling
 - Response Caching
 - Data Shaping
+- Observability with Grafana dashboards
 
 ---
 
